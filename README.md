@@ -11,7 +11,7 @@ Below app is built using this library adding few UI improvements to showcase the
 How to Use
 -------------
 1. Include the barcode reader dependency in app's **build.gradle**
-```
+```gradle
 dependencies {
     // google mobile vision
     implementation 'com.google.android.gms:play-services-vision:11.0.2'
@@ -22,7 +22,7 @@ dependencies {
 ```
 
 2. Add the barcode reader fragment to your activity
-```
+```xml
 <fragment
         android:id="@+id/barcode_fragment"
         android:name="info.androidhive.barcode.BarcodeReader"
@@ -33,7 +33,7 @@ dependencies {
 ```
 
 3. Implement your activity from <code>BarcodeReader.BarcodeReaderListener</code> and override the necessary methods.
-```
+```java
 public class MainActivity extends AppCompatActivity implements BarcodeReader.BarcodeReaderListener {
 
     private BarcodeReader barcodeReader;
@@ -73,7 +73,7 @@ Adding Scanner Overlay Scanning Indicator
 The overlay animation indicator displays a horizontal line animating from top to bottom. This will be useful to  to show some cool animation to indicate scanning progress.
 
 To use it, add the <code>info.androidhive.barcode.ScannerOverlay</code> on top of barcode reader fragment using Relative or Frame layout.
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout ...>
 
@@ -102,13 +102,14 @@ To use it, add the <code>info.androidhive.barcode.ScannerOverlay</code> on top o
 
 Additional Options
 -------------
-> XML attribute for **Barcode Reader**
+XML attribute for **Barcode Reader**
 
 <code>auto_focus</code> - boolean, turn on/off auto focus. Default is <code>true</code>
 
 <code>use_flash</code> - boolean, turn on/off flash. Default is <code>false</code>
 
-> XML attribute for **Scanner Overlay** Indicator
+
+XML attribute for **Scanner Overlay** Indicator
 
 <code>square_width</code> - Width of transparent square
 
@@ -118,12 +119,14 @@ Additional Options
 
 <code>line_speed</code> - Horizontal line animation speed
 
+----
+
 JAVA Methods
 
 - **Play beep sound**
 
 You can play the **beep** sound when the barcode is scanned. This code is usually called in <code>onScanned()</code> callback.
-```
+```java
 @Override
     public void onScanned(final Barcode barcode) {
         Log.e(TAG, "onScanned: " + barcode.displayValue);
@@ -135,21 +138,21 @@ You can play the **beep** sound when the barcode is scanned. This code is usuall
 - **Change beep sound**
 
 You can change the default **beep** sound by passing the file name. You beep file should be in project's **assets** folder.
-```
+```java
 barcodeReader.setBeepSoundFile("shutter.mp3");
 ```
 
 - **Pause scanning**
 
 The scanning can be paused by calling <code>pauseScanning()</code> method.
-```
+```java
 barcodeReader.pauseScanning();
 ```
 
 - **Resume Scanning**
 
 The scanning can be resumed by calling <code>resumeScanning()</code> method.
-```
+```java
 barcodeReader.resumeScanning();
 ```
 
