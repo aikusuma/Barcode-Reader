@@ -7,9 +7,14 @@ Android Barcode Reader library using **Google Mobile Vision.** This library is b
 
 ----------
 
-Movie Tickets Sample App
+Sample App - Movie Tickets Barcode Scanner
 -------------
-Below app is built using this library adding few UI improvements to showcase the usefulness of the library.
+Below app is built using this library adding few UI improvements to showcase the usefulness of the library. Complete guide to build the app can be read ![here](https://www.androidhive.info/2017/07/android-implementing-preferences-settings-screen/)
+
+Date Picker | Time Picker
+--- | ---
+![Date Picker](https://user-images.githubusercontent.com/497670/29020592-3a3517bc-7b80-11e7-9803-1395a881a1e7.jpg) | ![Time Picker](https://user-images.githubusercontent.com/497670/29020591-39f0e9b6-7b80-11e7-9251-ea267c53880a.png)
+
 
 How to Use
 -------------
