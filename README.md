@@ -5,12 +5,6 @@ Android Barcode Reader library using **Google Mobile Vision.** This library is b
 [ ![Download](https://api.bintray.com/packages/androidhive-info/maven/barcode-reader/images/download.svg) ](https://bintray.com/androidhive-info/maven/barcode-reader/_latestVersion)
 [![Example](https://img.shields.io/badge/Example-Movie%20Tickets-green.svg)](https://www.androidhive.info/2017/07/android-implementing-preferences-settings-screen/)
 
-----------
-
-Sample App - Movie Tickets Barcode Scanner
--------------
-Below app is built using this library adding few UI improvements to showcase the usefulness of the library. Complete guide to build the app can be read ![here](https://www.androidhive.info/2017/07/android-implementing-preferences-settings-screen/)
-
 ![Demo](https://api.androidhive.info/barcodes/barcode-reader-demo.gif)
 
 How to Use
